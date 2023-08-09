@@ -7,3 +7,20 @@ return the length of the longest vowel substring.
 
 Note: Vowels are any of aeiou. 
 */
+
+
+function solve(s) {
+  let cur = 0
+  let max = 0
+  for (let i = 0; i < s.length; ++i) {
+    if ("aeiou".includes(s[i])) {
+      cur++
+      if (cur > max) {
+        max = cur
+      }
+    } else {
+      cur = 0
+    }
+  }
+  return max
+}
