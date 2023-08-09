@@ -24,3 +24,5 @@ function solve(s) {
   }
   return max
 }
+
+// or
